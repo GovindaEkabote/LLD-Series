@@ -15,7 +15,7 @@ public class Employee {
     private final List<String> skills;
     private final boolean isActive;
 
-    // 2. PRIVATE CONSTRUCTOR - For builder pattern
+    // 2. Public CONSTRUCTOR
     public Employee(int id,String firstName, String lastName, String email, String department, double salary, List<String> skills,boolean isActive){
         this.id = id;
         this.firstName=firstName;
@@ -45,7 +45,7 @@ public class Employee {
         }
     }
 
-    // 4. GETTERS - No setters for immutability
+    // 4. GETTERS
     public int getId() {
         return id;
     }
